@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #070b14;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1120;
+    padding: 15px 40px;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #00e5ff;
+}
+
+.navbar div a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar div a:hover, .navbar div a.active {
+    color: #00e5ff;
+}
+
+/* Page Layout */
+.page {
+    flex: 1;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    color: #00e5ff;
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.card {
+    background-color: #0b1120;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section Layout (Side-by-Side Image and Text) */
+.about-flex-container {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #00e5ff;
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.2);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+/* Certificate Image Preview */
+.cert-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0b1120;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #1e293b;
+}
+
+th {
+    background-color: #00e5ff;
+    color: #070b14;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #111c30;
+}
+
+/* Buttons & Links */
+.btn {
+    display: inline-block;
+    background-color: #00e5ff;
+    color: #070b14;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00b8d4;
+    transform: translateY(-2px);
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #0b1120;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+}
+
+label {
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #1e293b;
+    background-color: #111c30;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #00e5ff;
+    outline: none;
+}
+
+/* Contact Info Box */
+.contact-info-box {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #0b1120;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+}
+
+.contact-info-box p {
+    margin: 8px 0;
+    color: #cbd5e1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b1120;
+    color: #64748b;
+    border-top: 1px solid #1e293b;
+    font-size: 0.9rem;
+}
